@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/images/wow-favicon-32x32.png" type="image/x-icon">
 
-    <title>Integrador WOW</title>
+    <title>WOW System Integrator</title>
 
     <!-- ==== fonts ==== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,15 +16,11 @@
 
     <!-- ==== css ==== -->
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-
+    <link rel="stylesheet" href="./src/css/styles.css">
 
 </head>
-
 <body>
-    <div class="container">
-
-        <!-- ======= Navegação ======= -->
+    <div class="container-fundo">
         <div class="container-menu">
             <header class="header">
                 <div class="logo">
@@ -33,9 +28,8 @@
                     <p>Integrator System</p>
                 </div>
 
-                <nav class="nav">
-
-                    <div class="check">
+                <nav>
+                    <div class="menu-check">
                         <input type="radio" name="menu" id="menu-dash" checked>
                         <label for="menu-dash">
                             <div class="menu">
@@ -45,7 +39,7 @@
                         </label>
                     </div>
 
-                    <div class="check">
+                    <div class="menu-check">
                         <input type="radio" name="menu" id="menu-order">
                         <label for="menu-order">
                             <div class="menu">
@@ -54,7 +48,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="check">
+                    <div class="menu-check">
                         <input type="radio" name="menu" id="menu-shop">
                         <label for="menu-shop">
                             <div class="menu">
@@ -63,7 +57,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="check">
+                    <div class="menu-check">
                         <input type="radio" name="menu" id="menu-support">
                         <label for="menu-support">
                             <div class="menu">
@@ -72,7 +66,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="check">
+                    <div class="menu-check">
                         <input type="radio" name="menu" id="menu-comunity">
                         <label for="menu-comunity">
                             <div class="menu">
@@ -82,7 +76,7 @@
                         </label>
                     </div>
 
-                    <div class="check">
+                    <div class="menu-check">
                         <input type="radio" name="menu" id="menu-settings">
                         <label for="menu-settings">
                             <div class="menu">
@@ -92,34 +86,138 @@
                         </label>
                     </div>
                 </nav>
-                <div class="area">
-                <div class="area-user">
-                    <img src="./src/images/image 27.png" alt="img-user">
-                    <p>Gabriel H.</p>
+
+                <div class="user">
+                    <div class="info-user">
+                        <a href="#">
+                            <img src="./src/images/image 27.png" alt="img-user">
+
+                            
+                        </a>
+                        <p>Gabriel H.</p>
+                    </div>
+
+                    <div class="log-out">
+                        <p class="icon"><ion-icon name="exit-outline"></ion-icon></p>
+                        <a href="#">Sair</a>
+                    </div>
+
                 </div>
-            </div>
+
             </header>
         </div>
 
+        <div class="container-info">
 
-        <div class="container-sections">
-            <div class="container-dash">
-                <div class="ped-recebidos">1</div>
-                <div class="ped-transito">2</div>
-                <div class="ped-falta">3</div>
-                <div class="loja-produtos">4</div>
-                <div class="loja-dados">5</div>
-                <div class="comu-conquista">6</div>
-                <div class="help-chamado">7</div>
-                <div class="comu-novidade">8</div>
-                <div class="help-manual">9</div>
+            <div class="info-dash">
+
+                <div class="container-dash dash-ped1">
+                    <div class="dash-titulo">
+                        <h2>Pedidos Recebidos</h2>
+
+                        <p><ion-icon name="cube-outline"></ion-icon></p>
+                    </div>
+
+                    <div class="dash-dados-ped">
+                        <h3>40</h3>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-ped2">
+                    <div class="dash-titulo">
+                        <h2>Pedidos em Rota</h2>
+
+                        <p><ion-icon name="cube-outline"></ion-icon></p>
+                    </div>
+
+                    <div class="dash-dados-ped">
+                        <h3>03</h3>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-ped3">
+                    <div class="dash-titulo">
+                        <h2>Pedidos a Receber</h2>
+
+                        <p><ion-icon name="cube-outline"></ion-icon></p>
+                    </div>
+
+                    <div class="dash-dados-ped">
+                        <h3>10</h3>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-shop1">
+                    <div class="dash-titulo">
+                        <h2>Produtos</h2>
+
+                        <p><ion-icon name="cart-outline"></ion-icon></p>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-shop2">
+                    <div class="dash-titulo">
+                        <h2>Relatórios</h2>
+
+                        <p><ion-icon name="cart-outline"></ion-icon></p>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-news1">
+                    <div class="dash-titulo">
+                        <h2>Novidades</h2>
+
+                        <p><ion-icon name="globe-outline"></ion-icon></p>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-news2">
+                    <div class="dash-titulo">
+                        <h2>Conquistas</h2>
+
+                        <p><ion-icon name="globe-outline"></ion-icon></p>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-help1">
+                    <div class="dash-titulo">
+                        <h2>Suporte</h2>
+
+                        <p><ion-icon name="people-outline"></ion-icon></p>
+                    </div>
+                </div>
+
+                <div class="container-dash dash-help2">
+                    <div class="dash-titulo">
+                        <h2>Tutoriais</h2>
+
+                        <p><ion-icon name="people-outline"></ion-icon></p>
+                    </div>
+                </div>
+
             </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="info-order"></div>
+            <div class="info-shop"></div>
+            <div class="info-support"></div>
+            <div class="info-comunity"></div>
+            <div class="info-settings"></div>
+
         </div>
-
     </div>
-    <!-- ===== ionicons ===== -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
 
+
+        <!-- ===== ionicons ===== -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>

@@ -1,0 +1,299 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+/* ====== Containers ====== */
+
+.container-fundo{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 18% 82%;
+    grid-template-areas: "menu info";
+}
+
+@media(max-width:430px){
+    .container-fundo{
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem;
+        grid-template-areas: "menu" "info";
+    }
+}
+
+/* ===== navegação ===== */
+
+
+.container-menu{
+    grid-area: menu;
+    background: linear-gradient(170deg, rgba(8, 14, 152, 1), rgba(8, 14, 152, 0.85));
+    box-shadow: 0.1rem 0.3rem 1.5rem #000;
+}
+
+.container-menu .header{
+    padding: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.header .logo h1{
+    font-family: "fonte wow";
+    font-weight: 100;
+    font-size: 4.4rem;
+    letter-spacing: 0.2rem;
+}
+
+.header .logo p{
+    font-family: "chakra petch";
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.header nav .menu-check{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.header nav .menu-check:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.header nav .menu-check input{
+    display: none;
+}
+
+.header nav .menu-check .menu{
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+    cursor: pointer;
+}
+
+.header nav .menu-check .menu span ion-icon{
+    font-size: 3.8rem;
+    height: 3.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header nav .menu-check .menu .title{
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.header nav .menu-check input:checked ~ label .menu{
+    background-color: rgba(5, 10, 80, 0.4);
+    transition: 0.4s;
+    border-radius: 3rem;
+}
+
+.header nav .menu-check input:checked ~ label .menu span{
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.4s;
+}
+
+.header nav .menu-check input:checked ~ label .menu span ion-icon{
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.4s;
+}
+
+
+.header .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.header .user .info-user, .log-out{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.6rem;
+}
+
+.header .user .info-user a img{
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+.header .user .info-user p{
+    font-family: "chakra petch";
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.header .user .log-out p{
+    font-size: 2.4rem;
+    height: 2.4rem;
+}
+
+.header .user .log-out a{
+    font-size: 1.4rem;
+    font-family: "chakra petch";
+    transition: 0.3s ease-in-out;
+}
+
+.header .user .log-out a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== dashboards ===== */
+.container-info{
+    grid-area: info;
+    padding: 3rem;
+}
+
+/* ===== infos ===== */
+
+.info-dash{
+    display: grid;
+    height: 100%;
+    grid-gap: 1.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "ped1 ped2 ped3"
+    "shop1 shop1 shop2"
+    "shop1 shop1 shop2"
+    "news1 news2 help2"
+    "news1 help1 help2";  
+}
+
+.container-dash{
+    color: rgba(8, 14, 152, 1);
+    box-shadow: 0.2rem 0.4rem 0.9rem rgba(8,14,152,0.4);
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container-dash:nth-child(1n){
+    display: flex;
+    flex-direction: column;
+}
+.container-dash:hover{
+    transform: scaleX(1.012);
+}
+
+.container-dash.dash-ped1{
+    grid-area: ped1;
+}
+
+.container-dash .dash-titulo:nth-child(1n){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-dash .dash-titulo h2:nth-child(1n){
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 2.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.container-dash .dash-titulo p:nth-child(1n){
+    font-size: 2.8rem;
+    max-height: 2.8rem;
+}
+
+.container-dash .dash-titulo p ion-icon:nth-child(1n){
+    color: rgba(8, 14, 152, 0.9);
+}
+
+.container-dash .dash-dados-ped{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-dash .dash-dados-ped h3{
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 6.4rem;
+    letter-spacing: 0.2rem;
+}
+
+
+.container-dash.dash-ped2{
+    grid-area: ped2;
+}
+
+
+.container-dash.dash-ped3{
+    grid-area: ped3;
+}
+
+
+.container-dash.dash-shop1{
+    grid-area: shop1;
+}
+
+
+.container-dash.dash-shop2{
+    grid-area: shop2;
+}
+
+
+.container-dash.dash-news1{
+    grid-area: news1;
+}
+
+
+.container-dash.dash-news2{
+    grid-area: news2;
+}
+
+
+.container-dash.dash-help1{
+    grid-area: help1;
+}
+
+
+.container-dash.dash-help2{
+    grid-area: help2;
+}
+
+
+
+
+
+
+
+
+.container-info .info-order{
+    display: none;
+}
+
+.container-info .info-shop{
+    display: none;
+}
+
+.container-info .info-support{
+    display: none;
+}
+
+.container-info .info-comunity{
+    display: none;
+}
+
+.container-info .info-settings{
+    display: none;
+}
