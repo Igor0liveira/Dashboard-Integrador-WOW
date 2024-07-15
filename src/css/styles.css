@@ -171,7 +171,6 @@ body{
     grid-template-areas:
     "ped1 ped2 ped3"
     "shop1 shop1 shop2"
-    "shop1 shop1 shop2"
     "news1 news2 help2"
     "news1 help1 help2";  
 }
@@ -190,7 +189,7 @@ body{
     flex-direction: column;
 }
 .container-dash:hover{
-    transform: scaleX(1.012);
+    transform: scaleX(1.01);
 }
 
 .container-dash.dash-ped1{
@@ -218,14 +217,14 @@ body{
     color: rgba(8, 14, 152, 0.9);
 }
 
-.container-dash .dash-dados-ped{
+.container-dash .dash-dados{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.container-dash .dash-dados-ped h3{
+.container-dash .dash-dados h3{
     color: rgba(8, 14, 152, 0.9);
     font-size: 6.4rem;
     letter-spacing: 0.2rem;
@@ -244,7 +243,100 @@ body{
 
 .container-dash.dash-shop1{
     grid-area: shop1;
+    display: flex;
+    flex-direction: column;
 }
+
+.container-dash.dash-shop1 .dash-dados{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dash-shop1 .ctn-shop1{
+    display: flex;
+    align-items: center;
+}
+
+.dash-shop1 .ctn-shop1 .carrossel-img img{
+    width: 30rem;
+}
+
+.dash-shop1 .dash-dados .ctn-shop2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.dash-shop1 .dash-dados .ctn-shop2 h4{
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+}
+
+.dash-shop1 .dash-dados .ctn-shop2 p{
+    color: rgba(8, 14, 152, 0.6);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.dash-shop1 .dash-dados .ctn-shop2 .preco{
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+}
+
+.dash-shop1 .dash-dados .ctn-shop2 .btn{
+    background: linear-gradient(139deg, #1E1ACF 0%, #2972C7 100%); box-shadow: 0.2rem 0.6rem 0.7rem rgba(0, 0, 0, 0.25) inset; 
+    border-radius: 3rem;
+    padding: 1.4rem 2.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container-dash.dash-shop2{
