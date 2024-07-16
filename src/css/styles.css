@@ -169,7 +169,7 @@ body{
     grid-gap: 1.4rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "ped1 ped2 ped3"
+    "ped1 ped2 ped3" 
     "shop1 shop1 shop2"
     "news1 news2 help2"
     "news1 help1 help2";  
@@ -189,7 +189,7 @@ body{
     flex-direction: column;
 }
 .container-dash:hover{
-    transform: scaleX(1.01);
+    transform: scaleX(1.001);
 }
 
 .container-dash.dash-ped1{
@@ -204,17 +204,18 @@ body{
 
 .container-dash .dash-titulo h2:nth-child(1n){
     color: rgba(8, 14, 152, 0.9);
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     letter-spacing: 0.05rem;
 }
 
 .container-dash .dash-titulo p:nth-child(1n){
-    font-size: 2.8rem;
-    max-height: 2.8rem;
+    font-size: 2rem;
+    max-height: 2rem;
 }
 
 .container-dash .dash-titulo p ion-icon:nth-child(1n){
     color: rgba(8, 14, 152, 0.9);
+    font-size: 2rem;
 }
 
 .container-dash .dash-dados{
@@ -226,7 +227,7 @@ body{
 
 .container-dash .dash-dados h3{
     color: rgba(8, 14, 152, 0.9);
-    font-size: 6.4rem;
+    font-size: 5.8rem;
     letter-spacing: 0.2rem;
 }
 
@@ -243,105 +244,139 @@ body{
 
 .container-dash.dash-shop1{
     grid-area: shop1;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .container-dash.dash-shop1 .dash-dados{
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.dash-shop1 .ctn-shop1{
-    display: flex;
-    align-items: center;
+.dash-shop1 .dash-dados .shop1-img .img-1{
+    width: 50%;
+    transform: scale(1.5,1.5);
+    cursor: pointer;
 }
 
-.dash-shop1 .ctn-shop1 .carrossel-img img{
-    width: 30rem;
-}
-
-.dash-shop1 .dash-dados .ctn-shop2{
+.dash-shop1 .dash-dados .shop1-produto{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
 
-.dash-shop1 .dash-dados .ctn-shop2 h4{
+.dash-shop1 .dash-dados .shop1-produto h4{
     color: rgba(8, 14, 152, 0.9);
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-    font-weight: 300;
+    font-size: 2.4rem;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0.4rem;
-}
-
-.dash-shop1 .dash-dados .ctn-shop2 p{
-    color: rgba(8, 14, 152, 0.6);
-    font-size: 1.4rem;
-    font-weight: 500;
     margin-bottom: 0.6rem;
 }
 
-.dash-shop1 .dash-dados .ctn-shop2 .preco{
+.dash-shop1 .dash-dados .shop1-produto p{
     color: rgba(8, 14, 152, 0.9);
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
 }
 
-.dash-shop1 .dash-dados .ctn-shop2 .btn{
-    background: linear-gradient(139deg, #1E1ACF 0%, #2972C7 100%); box-shadow: 0.2rem 0.6rem 0.7rem rgba(0, 0, 0, 0.25) inset; 
-    border-radius: 3rem;
+.dash-shop1 .dash-dados .shop1-produto h5{
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 2rem;
+    margin-bottom: 2.8rem;
+}
+
+
+.dash-shop1 .dash-dados .shop1-produto .btn{
+    background: linear-gradient(139deg, #1E1ACF 0%, #2972C7 100%); box-shadow: 0.2rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25) inset; 
+    border-radius: 30px;
     padding: 1.4rem 2.8rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container-dash.dash-shop2{
     grid-area: shop2;
 }
+
+.dash-shop2 .dash-relatorio{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dash-shop2 .dash-relatorio .relatorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-shop2 .dash-relatorio .relatorio h3{
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    color: #000;
+    font-family: "fonte wow";
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+}
+
+.dash-shop2 .dash-relatorio .relatorio img{
+    width: 10rem;
+}
+
+.dash-shop2 .dash-relatorio .relatorio .contorno{
+    width: 45%;
+    height: 1.5rem;
+    border-radius: 4rem;
+    border: 0.2rem solid rgba(8, 14, 152, 0.6);
+}
+
+.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-wow, .preenchimento-trustfi, .preenchimento-ws{
+    border-radius: 4rem;
+    height: 100%;
+    background: linear-gradient(139deg, #1E1ACF 0%, #2972C7 100%);
+    animation: preencher 6s  ease-in-out;
+}
+
+
+.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-wow{
+    width: 90%;
+
+}
+
+.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-ws{
+    width: 30%;
+}
+
+
+.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-trustfi{
+    width: 70%;
+}
+
+@-webkit-keyframes preencher{
+    0%{
+        width: 0%;
+        border-radius: 4rem;
+    }
+}
+
+.dash-shop2 .dash-relatorio .relatorio .meta{
+    color: #1E1ACF;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container-dash.dash-news1{
@@ -370,22 +405,3 @@ body{
 
 
 
-.container-info .info-order{
-    display: none;
-}
-
-.container-info .info-shop{
-    display: none;
-}
-
-.container-info .info-support{
-    display: none;
-}
-
-.container-info .info-comunity{
-    display: none;
-}
-
-.container-info .info-settings{
-    display: none;
-}
