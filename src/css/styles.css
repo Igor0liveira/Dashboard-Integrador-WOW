@@ -158,7 +158,7 @@ body{
 /* ===== dashboards ===== */
 .container-info{
     grid-area: info;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 /* ===== infos ===== */
@@ -204,18 +204,18 @@ body{
 
 .container-dash .dash-titulo h2:nth-child(1n){
     color: rgba(8, 14, 152, 0.9);
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     letter-spacing: 0.05rem;
 }
 
 .container-dash .dash-titulo p:nth-child(1n){
-    font-size: 2rem;
-    max-height: 2rem;
+    font-size: 2.8rem;
+    max-height: 2.8rem;
 }
 
 .container-dash .dash-titulo p ion-icon:nth-child(1n){
     color: rgba(8, 14, 152, 0.9);
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 
 .container-dash .dash-dados{
@@ -227,160 +227,220 @@ body{
 
 .container-dash .dash-dados h3{
     color: rgba(8, 14, 152, 0.9);
-    font-size: 5.8rem;
+    font-size: 4rem;
     letter-spacing: 0.2rem;
 }
-
 
 .container-dash.dash-ped2{
     grid-area: ped2;
 }
 
-
 .container-dash.dash-ped3{
     grid-area: ped3;
 }
 
-
+/* Info de Shop */
 .container-dash.dash-shop1{
     grid-area: shop1;
-
 }
 
-.container-dash.dash-shop1 .dash-dados{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.dash-shop1 .produtos{
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-.dash-shop1 .dash-dados .shop1-img .img-1{
+.dash-shop1 .produtos .produtos-img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.dash-shop1 .produtos .produtos-img::before{
+    content: url(../images/Frame\ 19.png);
+}
+
+.dash-shop1 .produtos .produtos-img::after{
+    content: url(../images/Frame\ 20.png);
+}
+
+.dash-shop1 .produtos .produtos-img .ctn-img3{
+    width: 100%;
+}
+
+.dash-shop1 .produtos .produtos-img .ctn-img3 .defy2{
     width: 50%;
-    transform: scale(1.5,1.5);
-    cursor: pointer;
 }
 
-.dash-shop1 .dash-dados .shop1-produto{
+.dash-shop1 .produtos .produtos-img .ctn-img4{
+    width: 100%;
+}
+
+.dash-shop1 .produtos .produtos-img .ctn-img4 .defy1{
+    width: 100%;
+}
+
+.dash-shop1 .produtos .produtos-preco{
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.dash-shop1 .dash-dados .shop1-produto h4{
-    color: rgba(8, 14, 152, 0.9);
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    margin-bottom: 0.6rem;
+.dash-shop1 .produtos .produtos-preco .preco-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4rem;
 }
 
-.dash-shop1 .dash-dados .shop1-produto p{
-    color: rgba(8, 14, 152, 0.9);
-    font-size: 1.2rem;
-    margin-bottom: 0.9rem;
-}
-
-.dash-shop1 .dash-dados .shop1-produto h5{
-    color: rgba(8, 14, 152, 0.9);
+.dash-shop1 .produtos .produtos-preco .preco-info h4{
+    color: rgba(8, 14, 152, 0.8);
     font-size: 2rem;
-    margin-bottom: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
+.dash-shop1 .produtos .produtos-preco .preco-info p{
+    color: rgba(8,14,152,0.4);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+}
 
-.dash-shop1 .dash-dados .shop1-produto .btn{
-    background: linear-gradient(139deg, #1E1ACF 0%, #2972C7 100%); box-shadow: 0.2rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25) inset; 
+.dash-shop1 .produtos .produtos-preco .preco-info h3{
+    color: rgba(8, 14, 152, 1);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.dash-shop1 .produtos .produtos-preco .comprar{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4rem;
+    margin-top: -6rem;
+}
+
+.btn{
+    background: linear-gradient(139deg, rgba(8, 14, 152, 1) 0%, rgba(8, 14, 152, 0.8) 100%);
+    box-shadow: 0.2rem 0.6rem 0.7rem rgba(0, 0, 0, 0.25) inset;
     border-radius: 30px;
-    padding: 1.4rem 2.8rem;
-    font-size: 1.4rem;
+    padding: 1rem 2.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
+
+
 
 .container-dash.dash-shop2{
     grid-area: shop2;
 }
 
-.dash-shop2 .dash-relatorio{
+.dash-shop2 .ctn-relatorio{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-
-.dash-shop2 .dash-relatorio .relatorio{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
     align-items: center;
 }
 
-.dash-shop2 .dash-relatorio .relatorio h3{
-    width: 10rem;
-    height: 10rem;
-    line-height: 10rem;
-    color: #000;
-    font-family: "fonte wow";
-    letter-spacing: 0.2rem;
-    font-weight: 100;
+.dash-shop2 .ctn-relatorio .relatorio{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 }
 
-.dash-shop2 .dash-relatorio .relatorio img{
-    width: 10rem;
+.dash-shop2 .ctn-relatorio .relatorio img{
+    width: 9rem;
+    height: 9rem;
 }
 
-.dash-shop2 .dash-relatorio .relatorio .contorno{
-    width: 45%;
-    height: 1.5rem;
+.dash-shop2 .ctn-relatorio .relatorio .barra-contorno{
+    border: 0.1rem solid rgba(8, 14, 152, 0.9);
+    width: 55%;
+    height: 1.8rem;
+    border-radius: 3rem;
+}
+
+.dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento{
+    background: linear-gradient(139deg, rgba(8, 14, 152, 1) 0%, rgba(8, 14, 152, 0.8) 100%);
     border-radius: 4rem;
-    border: 0.2rem solid rgba(8, 14, 152, 0.6);
-}
-
-.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-wow, .preenchimento-trustfi, .preenchimento-ws{
-    border-radius: 4rem;
+    font-size: 1.2rem;
+    padding: 0.1rem;
     height: 100%;
-    background: linear-gradient(139deg, #1E1ACF 0%, #2972C7 100%);
-    animation: preencher 6s  ease-in-out;
+    animation: preencher 4s ease-in-out;
+    position: relative;
 }
 
-
-.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-wow{
-    width: 90%;
-
+.dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento.wow{
+    width: 92%;
 }
 
-.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-ws{
-    width: 30%;
+.dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento.trustfi{
+    width: 85%;
 }
 
-
-.dash-shop2 .dash-relatorio .relatorio .contorno .preenchimento-trustfi{
+.dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento.ws{
     width: 70%;
+}
+
+.dash-shop2 .ctn-relatorio .relatorio .meta{
+    color: rgba(8, 14, 152, 0.9);
+    font-weight: 700;
+    font-size: 1.15rem;
 }
 
 @-webkit-keyframes preencher{
     0%{
         width: 0%;
-        border-radius: 4rem;
+        left: 0;
+        border-radius: 3rem;
+
     }
 }
 
-.dash-shop2 .dash-relatorio .relatorio .meta{
-    color: #1E1ACF;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-dash.dash-news1{
     grid-area: news1;
+}
+
+.dash-news1 .ctn-news{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dash-news1 .ctn-news img{
+    max-width: 50%;
+    border-radius: 10rem;
+}
+
+
+
+
+.dash-news1 .ctn-news .news-info h4{
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.dash-news1 .ctn-news .news-info P{
+    color: rgba(5, 10, 80, 0.5);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.dash-news1 .bullets{
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
 }
 
 
@@ -388,14 +448,52 @@ body{
     grid-area: news2;
 }
 
+.dash-news2 .ctn-conquistas{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100%; 
+}
+
+.dash-news2 .ctn-conquistas .conquistas{
+    color: rgba(8, 14, 152, 0.9);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+
 
 .container-dash.dash-help1{
     grid-area: help1;
 }
 
+.dash-help1 .ctn-chamado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 4rem;
+}
+
+.dash-help1 .ctn-chamado h3{
+    color: rgba(8, 14, 152, 0.9);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 
 .container-dash.dash-help2{
     grid-area: help2;
+}
+
+.dash-help2 .ctn-manual{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dash-help2 .ctn-manual .ctn-video video{
+    max-width: 50%;
 }
 
 
