@@ -486,15 +486,53 @@ body{
     grid-area: help2;
 }
 
-.dash-help2 .ctn-manual{
+.dash-help2 .ctn-manual .ctn-video{
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: 100%;
+    gap: 1.6rem;
+}
+
+.dash-help2 .ctn-manual .ctn-video h4{
+    color: rgba(8, 14, 152, 0.9);
 }
 
 .dash-help2 .ctn-manual .ctn-video video{
-    max-width: 50%;
+    max-width: 75%;
+    border-radius: 1rem;
 }
+
+.dash-help2 .ctn-manual .ctn-video .carrossel{
+    display: block;
+    width: 4rem;
+    height: 0.2rem;
+    background-color: rgba(8, 14, 152, 0.9);
+    position: relative;
+    transition: 0.2 ease-in-out;
+}
+
+.dash-help2 .ctn-manual .ctn-video .carrossel::before, .dash-help2 .ctn-manual .ctn-video .carrossel::after{
+    background-color: rgba(8, 14, 152, 0.4);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.dash-help2 .ctn-manual .ctn-video .carrossel::before{
+    left: -6rem;
+}
+
+.dash-help2 .ctn-manual .ctn-video .carrossel::after{
+    right: -6rem;
+}
+
+
+
+
+
 
 
 
