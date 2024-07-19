@@ -1,0 +1,443 @@
+@media(max-width:1381px){
+    .container-fundo{
+        grid-template-columns: 25rem 1fr;
+    }
+
+    .header .logo h1{
+        font-size: 3.6rem;
+    }
+
+    .header .logo p{
+        font-size: 1.2rem;
+    }
+
+    .header nav .menu-check .menu span ion-icon{
+        font-size: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .header nav .menu-check .menu .title{
+        font-size: 1.6rem;
+    }
+
+    .header .user .info-user a img{
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .container-dash .dash-titulo h2:nth-child(1n){
+        font-size: 2rem;
+    }
+
+    .container-dash .dash-titulo p:nth-child(1n){
+        font-size: 2rem;
+        max-height: 2rem;
+    }
+
+    .container-dash .dash-titulo p ion-icon:nth-child(1n){
+        font-size: 2rem;
+    }
+
+    .container-dash .dash-dados h3{
+        font-size: 4rem;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info h4{
+        letter-spacing: 0;
+    }
+
+    .btn{
+        font-size: 1rem;
+    }
+
+    .dash-news1 .ctn-news img{
+        max-width: 60%;
+    }
+
+    .dash-help1 .ctn-chamado h3{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:1281px){
+    .dash-shop1 .produtos .produtos-preco .preco-info h4{
+        font-size: 1.8rem;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info p{
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info h3{
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .dash-shop2 .ctn-relatorio .relatorio img{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .barra-contorno{
+        width: 50%;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento{
+        font-size: 0.9rem;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .meta{
+        font-size: 0.8rem;
+    }
+
+    .dash-news1 .ctn-news{
+        height: 100%;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .dash-news1 .ctn-news .news-info h4{
+        text-align: center;
+    }
+
+    .dash-news1 .ctn-news .news-info P{
+        text-align: center;
+    }
+
+    .dash-help1 .ctn-chamado h3{
+        font-size: 48%;
+    }
+
+    .dash-help2 .ctn-manual{
+        height: 100%;
+    }
+}
+
+@media(max-width:1127px){
+    .container-fundo{
+        grid-template-columns: 19rem 1fr;
+    }
+
+    .container-menu .header{
+        padding: 1rem;
+    }
+
+    .header .logo h1{
+        font-size: 3.6rem;
+    }
+
+    .header .logo p{
+        font-size: 1.2rem;
+    }
+
+    .header nav .menu-check .menu span ion-icon{
+        font-size: 2rem;
+        height: 2rem;
+    }
+
+    .header nav .menu-check .menu .title{
+        font-size: 1.4rem;
+    }
+
+    .header .user{
+        justify-content: space-around;
+    }
+
+    .header .user .info-user p{
+        display: none;
+    }
+
+    .header .user .log-out a{
+        display: none;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info h4{
+        font-size: 1.4rem;
+    }
+
+
+    .dash-shop1 .produtos .produtos-preco .preco-info h3{
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+    }
+
+    .btn{
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width:990px){
+    .dash-shop2 .ctn-relatorio .relatorio img{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media(max-width:890px){
+    .container-fundo{
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem;
+        grid-template-areas: "menu" "info";
+    }
+
+    .container-menu .header{
+        flex-direction: row;
+        margin: 0 2rem;
+        align-items: center;
+    }
+
+    .header .logo h1{
+        font-size: 2.4rem;
+        margin-bottom: -0.6rem;
+    }
+
+    .header .logo p{
+        font-size: 1rem;
+    }
+
+    .header nav{
+        display: flex;
+        gap: 4rem;
+    }
+
+    .header nav .menu-check{
+        margin-bottom: 0;
+    }
+
+    .header nav .menu-check .menu .title{
+        display: none;
+    }
+
+    .header nav .menu-check .menu{
+        padding: 0;
+    }
+
+    .header nav .menu-check .menu span ion-icon{
+        font-size: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .header nav .menu-check input:checked ~ label .menu{
+            background-color: transparent;
+    }
+
+    .header nav .menu-check input:checked ~ label .menu span ion-icon{
+        color: rgba(93, 178, 228, 0.9);
+        transition: 0.4s;
+    }
+
+    .header .user{
+        margin-bottom: 0;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .info-dash{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "ped1 ped1"
+        "ped2 ped3"
+        "shop1 shop1"
+        "shop2 shop2"
+        "news1 news1"
+        "help1 news2" "help2 help2";
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio{
+        justify-content: center;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio img{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .meta{
+        font-size: 1.4rem;
+    }
+
+    .dash-news2 .ctn-conquistas .conquistas{
+        margin: 4rem 0;
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:650px){
+    .header nav{
+        gap: 2.4rem;
+    }
+
+    .header nav .menu-check .menu span ion-icon{
+        font-size: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .header .user{
+        gap: 1.6rem;
+    }
+
+    .header .user .info-user a img{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .header .user .log-out p{
+        font-size: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info h3{
+        font-size: 1.4rem;
+        margin-bottom: 8rem;
+    } 
+}
+
+@media(max-width:500px){
+    .container-menu .header{
+        padding: 0;
+    }
+
+    .header .logo p{
+        display: none;
+    }
+
+
+    .info-dash{
+        grid-template-columns: 1fr ;
+        grid-template-areas: "ped1"
+        "ped2"
+        "ped3"
+        "shop1"
+        "shop2"
+        "news1"
+        "news2"
+        "help1"
+        "help2";
+    }
+
+    .container-dash .dash-dados h3{
+        margin: 4rem 0;
+        font-size: 6rem;
+    }
+
+    .dash-shop1 .produtos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dash-shop1 .produtos .produtos-img .ctn-img3{
+        display: none;
+    }
+
+    .dash-shop1 .produtos .produtos-preco{
+        align-items: center;
+        width: 100%;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info{
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .preco-info h4{
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+    }
+    
+    .dash-shop1 .produtos .produtos-preco .preco-info p{
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 1.8rem;
+        color: rgba(1, 8, 12, 0.4);
+
+    }
+    
+    .dash-shop1 .produtos .produtos-preco .preco-info h3{
+        color: rgba(8, 14, 152, 1);
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 2.6rem;
+    }
+
+    .dash-shop1 .produtos .produtos-preco .comprar{
+        margin: 0;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento{
+        font-size: 1.2rem;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .meta{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:420px){
+    .header .logo h1{
+        font-size: 3rem;
+    }
+
+
+    .header nav .menu-check .menu{
+        display: none;
+    }
+
+
+    .header .menu-hamburguer{
+        display: block;
+    }
+
+    .header .menu-hamburguer p ion-icon{
+        height: 3rem;
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:321px){
+    .dash-shop2 .ctn-relatorio .relatorio img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .barra-contorno{
+        width: 40%;
+    }
+
+    .dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

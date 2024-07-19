@@ -17,13 +17,7 @@ body{
     grid-template-areas: "menu info";
 }
 
-@media(max-width:430px){
-    .container-fundo{
-        grid-template-columns: 1fr;
-        grid-template-rows: 6rem;
-        grid-template-areas: "menu" "info";
-    }
-}
+
 
 /* ===== navegação ===== */
 
@@ -66,6 +60,7 @@ body{
     display: flex;
     margin-bottom: 4rem;
 }
+
 
 .header nav .menu-check:nth-last-child(1){
     margin-bottom: 0;
@@ -114,6 +109,10 @@ body{
     transition: 0.4s;
 }
 
+.header .menu-hamburguer{
+    display: none;
+}
+
 
 .header .user{
     display: flex;
@@ -122,12 +121,7 @@ body{
     margin-bottom: 2rem;
 }
 
-.header .user .info-user, .log-out{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 0.6rem;
-}
+
 
 .header .user .info-user a img{
     max-width: 6rem;
@@ -138,6 +132,13 @@ body{
     font-family: "chakra petch";
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+}
+
+.header .user .info-user, .log-out{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.6rem;
 }
 
 .header .user .log-out p{
@@ -168,6 +169,10 @@ body{
     height: 100%;
     grid-gap: 1.4rem;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1fr
+    1fr
+    minmax(8rem 10rem)
+    minmax(8rem 10rem);
     grid-template-areas:
     "ped1 ped2 ped3" 
     "shop1 shop1 shop2"
@@ -227,7 +232,7 @@ body{
 
 .container-dash .dash-dados h3{
     color: rgba(8, 14, 152, 0.9);
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 0.2rem;
 }
 
@@ -369,6 +374,7 @@ body{
 
 .dash-shop2 .ctn-relatorio .relatorio .barra-contorno .barra-preenchimento{
     background: linear-gradient(139deg, rgba(8, 14, 152, 1) 0%, rgba(8, 14, 152, 0.8) 100%);
+    text-align: center;
     border-radius: 4rem;
     font-size: 1.2rem;
     padding: 0.1rem;
@@ -496,10 +502,12 @@ body{
 
 .dash-help2 .ctn-manual .ctn-video h4{
     color: rgba(8, 14, 152, 0.9);
+    margin-top: 2rem;
 }
 
 .dash-help2 .ctn-manual .ctn-video video{
-    max-width: 75%;
+    max-width: 80%;
+    height: 100%;
     border-radius: 1rem;
 }
 
